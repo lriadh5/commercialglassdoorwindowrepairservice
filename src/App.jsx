@@ -66,8 +66,8 @@ const P = {
 
 
 
-const PHONE = "(703) 609-3508";
-const PHONE_HREF = "tel:7036093508";
+const PHONE = "(202) 929-2890";
+const PHONE_HREF = "tel:2029292890";
 const COMPANY = "Commercial Glass Door & Window Repair Services";
 const TAGLINE = "NORTHERN VIRGINIA'S GLASS EXPERTS";
 
@@ -622,7 +622,7 @@ function Header({ setPage, currentPage }) {
 
       {/* STICKY CALL BAR - mobile only */}
       <div className="sticky-call">
-        <a href={PHONE_HREF}>📞 Tap to Call — Free Estimate: (703) 609-3508</a>
+        <a href={PHONE_HREF}>📞 Tap to Call — Free Estimate: (202) 929-2890</a>
       </div>
     </>
   );
@@ -686,7 +686,7 @@ function HomePage({ setPage }) {
           <h1>Commercial Glass Door &amp; <span>Window Repair</span> Services</h1>
           <p>Fast, professional glass repair for commercial storefronts, residential windows, and custom frameless shower doors throughout Northern Virginia. Same-day service available.</p>
           <div className="hero-btns">
-            <a href={PHONE_HREF} className="btn-primary">📞 Call (703) 609-3508</a>
+            <a href={PHONE_HREF} className="btn-primary">📞 Call (202) 929-2890</a>
             <button className="btn-secondary" onClick={() => setPage({ type: "contact" })}>Get Free Estimate →</button>
           </div>
           <div className="hero-stats">
@@ -1388,7 +1388,7 @@ function ContactForm() {
         <div style={{ fontSize: 48, marginBottom: 12 }}>✅</div>
         <div style={{ fontFamily: "Barlow Condensed", fontSize: 24, fontWeight: 800, color: "#2e7d32", marginBottom: 8 }}>Request Sent!</div>
         <p style={{ color: "#333", marginBottom: 16 }}>Thank you! We typically respond within 1 hour during business hours.</p>
-        <p style={{ color: "#555", fontSize: 14 }}>For immediate help call <a href="tel:7036093508" style={{ color: "#0F4C81", fontWeight: 700 }}>(703) 609-3508</a></p>
+        <p style={{ color: "#555", fontSize: 14 }}>For immediate help call <a href="tel:2029292890" style={{ color: "#0F4C81", fontWeight: 700 }}>(202) 929-2890</a></p>
         <button style={{ marginTop: 16, background: "#0F4C81", color: "#fff", border: "none", borderRadius: 6, padding: "10px 24px", cursor: "pointer", fontWeight: 700 }} onClick={() => setStatus("idle")}>Send Another Request</button>
       </div>
     );
@@ -1402,9 +1402,9 @@ function ContactForm() {
       <div className="form-group"><label>Service Needed</label><select name="service" value={formData.service} onChange={handleChange}><option value="">Select a service...</option>{ALL_SERVICES.map(s => <option key={s.key} value={s.name}>{s.name}</option>)}</select></div>
       <div className="form-group"><label>City / Location</label><select name="city" value={formData.city} onChange={handleChange}><option value="">Select your city...</option>{CITIES.map(c => <option key={c.key} value={c.name}>{c.name}</option>)}</select></div>
       <div className="form-group"><label>Describe the Issue *</label><textarea name="message" required placeholder="Please describe what needs to be repaired or replaced..." value={formData.message} onChange={handleChange} /></div>
-      {status === "error" && (<div style={{ background: "#ffebee", border: "1px solid #c62828", borderRadius: 6, padding: "10px 14px", marginBottom: 12, color: "#c62828", fontSize: 14 }}>Something went wrong. Please call us at <a href="tel:7036093508" style={{ color: "#c62828", fontWeight: 700 }}>(703) 609-3508</a> or try again.</div>)}
+      {status === "error" && (<div style={{ background: "#ffebee", border: "1px solid #c62828", borderRadius: 6, padding: "10px 14px", marginBottom: 12, color: "#c62828", fontSize: 14 }}>Something went wrong. Please call us at <a href="tel:2029292890" style={{ color: "#c62828", fontWeight: 700 }}>(202) 929-2890</a> or try again.</div>)}
       <button className="form-submit" type="submit" disabled={status === "sending"}>{status === "sending" ? "⏳ Sending..." : "📨 Send My Request"}</button>
-      <p style={{ fontSize: 11, color: "#888", marginTop: 10, textAlign: "center" }}>We typically respond within 1 hour. Or call: <a href="tel:7036093508" style={{color:"#0F4C81",fontWeight:700}}>(703) 609-3508</a></p>
+      <p style={{ fontSize: 11, color: "#888", marginTop: 10, textAlign: "center" }}>We typically respond within 1 hour. Or call: <a href="tel:2029292890" style={{color:"#0F4C81",fontWeight:700}}>(202) 929-2890</a></p>
     </form>
   );
 }
@@ -1489,8 +1489,8 @@ function ContactPage() {
                 <label>Describe the Issue</label>
                 <textarea placeholder="Please describe what needs to be repaired or replaced..." />
               </div>
-              <button className="form-submit" onClick={(e) => { e.preventDefault(); alert("Thank you! We will contact you within 1 hour during business hours. For immediate assistance call (703) 609-3508."); }}>📨 Send My Request</button>
-              <p style={{ fontSize: 11, color: "#888", marginTop: 10, textAlign: "center" }}>We typically respond within 1 hour during business hours. Or call us directly: <a href="tel:7036093508" style={{color:"#0F4C81",fontWeight:700}}>(703) 609-3508</a></p>
+              <button className="form-submit" onClick={(e) => { e.preventDefault(); alert("Thank you! We will contact you within 1 hour during business hours. For immediate assistance call (202) 929-2890."); }}>📨 Send My Request</button>
+              <p style={{ fontSize: 11, color: "#888", marginTop: 10, textAlign: "center" }}>We typically respond within 1 hour during business hours. Or call us directly: <a href="tel:2029292890" style={{color:"#0F4C81",fontWeight:700}}>(202) 929-2890</a></p>
             </div>
           </div>
         </div>
@@ -1526,7 +1526,7 @@ function FoggyWindowPage({ setPage }) {
             <p style={{ fontSize: 14, color: "rgba(255,255,255,0.9)", lineHeight: 1.6 }}>Most foggy windows do NOT need full window replacement. In many cases we can replace only the insulated glass unit, saving homeowners hundreds or even thousands of dollars.</p>
           </div>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
-            <a href={PHONE_HREF} className="btn-primary">📞 Call (703) 609-3508</a>
+            <a href={PHONE_HREF} className="btn-primary">📞 Call (202) 929-2890</a>
             <button className="btn-secondary" onClick={() => setPage({ type: "contact" })}>Get Free Estimate →</button>
           </div>
           <div style={{ display: "flex", gap: 24, marginTop: 32, paddingTop: 24, borderTop: "1px solid rgba(255,255,255,0.15)", flexWrap: "wrap" }}>
@@ -1665,7 +1665,7 @@ function FoggyWindowPage({ setPage }) {
           <h2>Foggy Windows in Northern Virginia?</h2>
           <p>Most foggy windows do NOT need full replacement. Call now for a free estimate.</p>
           <div className="cta-btns">
-            <a href={PHONE_HREF} className="btn-primary">📞 (703) 609-3508</a>
+            <a href={PHONE_HREF} className="btn-primary">📞 (202) 929-2890</a>
             <button className="btn-secondary" onClick={() => setPage({ type: "contact" })}>Request Free Estimate</button>
           </div>
         </div>
